@@ -49,7 +49,7 @@ class PrimeDealsSection extends Component {
 
       this.setState({
         primeDeals: updatedData,
-        apiStatus: 'SUCCESS',
+        apiStatus: apiStatusConstants.success,
       })
     } else if (response.status === 401) {
       this.setState({apiStatus: apiStatusConstants.failure})
